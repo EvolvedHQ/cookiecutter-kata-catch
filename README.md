@@ -1,7 +1,7 @@
 # Template for TDD Code Katas in C++
 
 Hey there. This is a cookiecutter template for a simple TDD code kata
-using Google Test/Google Mock.  It's intended to give you a repeatable
+using Catch! and Trompeloeil.  It's intended to give you a repeatable
 way of very quickly getting started for a "deliberate practice"
 session with C++.
 
@@ -9,7 +9,7 @@ session with C++.
 
 This generates a project for doing a test-driven code kata in C++.
 
-- Includes Google Test and Google Mock libraries
+- Includes Catch! and Trompeloeil libraries
 - Generates a header, "production" source file and an empty test
 - Generates a CMake build which will work on most platforms
 - Has some convenience targets for generating etags and running unit
@@ -31,10 +31,9 @@ and execute the kata. This is all going to take a fairly complete C++
 development toolchain, and you'll need to figure out how to get this
 configured for your platform, if you don't already have one.
 
-The minimum requirements for building this are really those from
-[Google Test/Google Mock](https://github.com/google/googletest), which
-supports C++98 or later (although we'd suggest that TDD in C++ is so
-much more fun with C++14 or later using a modern toolchain...).
+The minimum requirements for building this are basically a modern C++
+compiler (C++14) and standard library. If you need to add
+dependencies, you will have to modify the CMakeLists.txt file.
 
 ## Generating your project
 
@@ -48,7 +47,7 @@ $ cookiecutter <path-to-this-template>
 or directly from the GitHub URL where the template lives:
 
 ```
-$ cookiecutter https://github.com/13coders/cookiecutter-kata-gtest
+$ cookiecutter https://github.com/13coders/cookiecutter-kata-catch
 ```
 
 This template is intended to be very simple, so cookiecutter will
