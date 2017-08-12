@@ -40,4 +40,4 @@ add_custom_target(tags
 # specific target to support the TDD cycle
 add_custom_target(unit
   COMMAND ${CMAKE_BINARY_DIR}/{{ cookiecutter.kata|lower }}test
-  {% if cookiecutter.etags == "y" %} DEPENDS {{ cookiecutter.kata|lower }}test tags {% endif %})
+  DEPENDS {{ cookiecutter.kata|lower }}test {% if cookiecutter.etags == "y" %} tags {% endif %})
