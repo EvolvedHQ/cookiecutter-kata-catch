@@ -2,6 +2,8 @@ cmake_minimum_required (VERSION 2.8)
 
 project ({{ cookiecutter.kata|lower }}-kata)
 
+set (CMAKE_CXX_STANDARD 14)
+
 # Add Trompeloeil as a CMake subdirectory. Catch! is header-only.
 add_subdirectory(lib/trompeloeil-28)
 
