@@ -1,5 +1,7 @@
 # Build folder
 .build
+cmake-build-*
+.idea
 
 # Compiled Object files
 *.slo
