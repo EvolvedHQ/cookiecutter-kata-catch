@@ -1,19 +1,18 @@
 # Template for TDD Code Katas in C++
 
 Hey there. This is a cookiecutter template for a simple TDD code kata
-using Catch! and Trompeloeil.  It's intended to give you a repeatable
-way of very quickly getting started for a "deliberate practice"
-session with C++.
+using [Catch2]() and - optionally [Trompeloeil]() and [fff].  It's
+intended to give you a repeatable way of very quickly getting started
+for a "deliberate practice" session with C++.
 
 ## Features of this template
 
 This generates a project for doing a test-driven code kata in C++.
 
-- Includes Catch! and Trompeloeil libraries
+- Includes Catch2, Trompeloeil and fff libraries
 - Generates a header, "production" source file and an empty test
 - Generates a CMake build which will work on most platforms
-- Has some convenience targets for generating etags and running unit
-  tests
+- Has some convenience targets forrunning unit tests
 
 ## Pre-requisites
 
@@ -32,7 +31,7 @@ development toolchain, and you'll need to figure out how to get this
 configured for your platform, if you don't already have one.
 
 The minimum requirements for building this are basically a modern C++
-compiler (C++14) and standard library. If you need to add
+compiler (C++17) and standard library. If you need to add
 dependencies, you will have to modify the CMakeLists.txt file.
 
 ## Generating your project
@@ -72,19 +71,6 @@ So, if you prefer CamelCase file names, use something like
 "GameOfLife" as the kata name, or if you prefer snake_case file names,
 then use "game_of_life".
 
-```
-Select etags:
-1 - y
-2 - n
-Choose from 1, 2 [1]: 1
-```
-
-This lets you decide whether or not to include the build file magic
-for generating an [etags
-file](https://www.emacswiki.org/emacs/BuildTags) when recompiling-,
-which defaults to "y". If you choose no, there will be no dependency
-on etags in the build.
-
 If you want to, you can always add any extra tools you need (static
 analyzers, sanitizers etc) into the CMake file yourself - it's a
 minimal starting point.
@@ -105,7 +91,7 @@ after generating the project. Defaults to GPL v3.
 
 Your newly generated project has its own README.md, which has the next
 steps for compiling, linking and running the tests. There are also
-some useful resources linked in there on TDD, software craftsmanship
-and code katas to try out.
+some useful resources linked in there on TDD, software craft and code
+katas to try out.
 
 Happy coding !

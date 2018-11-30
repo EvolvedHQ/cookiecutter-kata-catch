@@ -15,12 +15,12 @@ This build structure can be done "out of tree" (ie not in this folder
 structure), or use the .build/ folder that's automatically created -
 this is also in the .gitignore by default, if you want
 
-A typical CMake invocation (for Clang and C++14) would be:
+A typical CMake invocation (for Clan, libc++ and C++17) would be:
 
 ```
 $ cd .build
 $ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug
-  -DCMAKE_CXX_FLAGS="-std=c++14"
+  -DCMAKE_CXX_FLAGS="-std=c++14 -stdlib=libc++"
   -DCMAKE_CXX_FLAGS_DEBUG="-fstandalone-debug -ggdb -O0" ..
 ```
 
@@ -90,10 +90,19 @@ There's a great list of Code Kata exercises at
 [a guide book](https://leanpub.com/codingdojohandbook) on code katas,
 with guidance and ideas for running coding dojos.
 
+Also read the manuals for the test libraries we've included in this
+cookiecutter template:
+
+- [Catch2 unit testing
+  framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
+- fff, the [Fake Function
+  Framework](https://github.com/meekrosoft/fff) if you want to write
+  test doubles for functions
+- [Trompeloeil](https://github.com/rollbear/trompeloeil), a mock
+  objects framework for C++
 
 ## License(s)
 
 The license for this kata can be found in the LICENSE.md file, - but
 be advised that the libraries used have their own terms and licences.
 Please check these in the lib folder.
-
