@@ -1,9 +1,13 @@
 # Template for TDD Code Katas in C++
 
 Hey there. This is a cookiecutter template for a simple TDD code kata
-using [Catch2]() and - optionally [Trompeloeil]() and [fff].  It's
-intended to give you a repeatable way of very quickly getting started
-for a "deliberate practice" session with C++.
+using
+[Catch2](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
+and - optionally -
+[Trompeloeil](https://github.com/rollbear/trompeloeil) and
+[fff](https://github.com/meekrosoft/fff).  It's intended to give you a
+repeatable way of very quickly getting started for a "deliberate
+practice" session with C++.
 
 ## Features of this template
 
