@@ -54,22 +54,18 @@ $ cookiecutter https://github.com/13coders/cookiecutter-kata-catch
 ```
 
 This template is intended to be very simple, so cookiecutter will
-prompt you for only three parameters when you are creating your project:
+prompt you for only two parameters when you are creating your project:
 
 ```
 kata [CodeKata]: 
 ```
 
 This is name/title of the Code Kata. Whatever name you provide will be
-capitalised exactly as you enter it:
-
-- If you use camel case, the name of the test file, source file and
-  header will be, for example "GameOfLife.cpp", "GameOfLifeTest.cpp"
-  etc
-
-- The name will be lowercased for the CMake file, the name of the
-  repository, the value in the #include guard and the dummy namespace
-  that's generated in the header
+capitalised exactly as you enter it. If you use camel case, the name
+of the test file, source file and header will be, for example
+"GameOfLife.cpp", "GameOfLifeTest.cpp" etc. The name will be
+lowercased for the CMake file and the dummy namespace that's generated
+in the header
 
 So, if you prefer CamelCase file names, use something like
 "GameOfLife" as the kata name, or if you prefer snake_case file names,

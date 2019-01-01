@@ -15,16 +15,16 @@ This build structure can be done "out of tree" (ie not in this folder
 structure), or use the .build/ folder that's automatically created -
 this is also in the .gitignore by default, if you want
 
-A typical CMake invocation (for Clan, libc++ and C++17) would be:
+A typical CMake invocation (for Clang, libc++ and C++17) would be:
 
 ```
 $ cd .build
 $ cmake -DCMAKE_CXX_COMPILER=clang++ -DCMAKE_BUILD_TYPE=Debug
-  -DCMAKE_CXX_FLAGS="-std=c++14 -stdlib=libc++"
+  -DCMAKE_CXX_FLAGS="-std=c++17 -stdlib=libc++"
   -DCMAKE_CXX_FLAGS_DEBUG="-fstandalone-debug -ggdb -O0" ..
 ```
 
-Then run the makefile as (for example):
+Then run the makefile as (for example, with 8 threads):
 
 ```
 $ make -j8 unit
@@ -80,7 +80,7 @@ and
 [here](http://blog.thecodewhisperer.com/permalink/putting-an-age-old-battle-to-rest/). Corey
 Haines wrote an [excellent, small
 book](https://leanpub.com/4rulesofsimpledesign) on the subject based
-on his observations running the Game Of Life Kata over many code
+on his observations running the "Game Of Life" Kata over many code
 retreats.
 
 ## Resources
@@ -93,13 +93,13 @@ with guidance and ideas for running coding dojos.
 Also read the manuals for the test libraries we've included in this
 cookiecutter template:
 
-- [Catch2 unit testing
+- The modern C++ [Catch2 unit testing
   framework](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md)
 - fff, the [Fake Function
-  Framework](https://github.com/meekrosoft/fff) if you want to write
+  Framework](https://github.com/meekrosoft/fff), if you want to write
   test doubles for functions
 - [Trompeloeil](https://github.com/rollbear/trompeloeil), a mock
-  objects framework for C++
+  object framework for C++
 
 ## License(s)
 

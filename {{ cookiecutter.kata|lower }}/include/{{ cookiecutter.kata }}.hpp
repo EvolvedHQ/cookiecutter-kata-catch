@@ -1,9 +1,9 @@
-#ifndef {{cookiecutter.kata|lower}}_header_included
-#define {{cookiecutter.kata|lower}}_header_included
+#ifndef {{cookiecutter.kata|upper}}_HEADER_INCLUDED
+#define {{cookiecutter.kata|upper}}_HEADER_INCLUDED
 
 namespace {{cookiecutter.kata|lower}} {
 
 
 }
 
-#endif 	// {{cookiecutter.kata|lower}}_header_included
+#endif 	// {{cookiecutter.kata|upper}}_HEADER_INCLUDED
